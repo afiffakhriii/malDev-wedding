@@ -1,7 +1,10 @@
 // src/app/layout.js
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/Header'; 
+import Header from '@/components/Header';
+import FallingSakura from '@/components/FallingSakura';
+
+import OpeningGate from '@/components/OpeningGate';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -21,6 +24,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <OpeningGate />
+        <FallingSakura />
         <Header />
         {children}
       </body>

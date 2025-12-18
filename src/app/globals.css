@@ -19,7 +19,12 @@
 }
 
 body {
-  background: var(--background);
+  background-image: url('/images/floral_bg_main.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: var(--foreground);
   font-family: "Poppins", Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }

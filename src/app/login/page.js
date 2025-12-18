@@ -10,8 +10,8 @@ export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white p-4 sm:p-6 md:p-8">
-      <div className="w-full max-w-sm bg-white p-6 md:p-8 rounded-2xl shadow-lg text-center">
+    <div className="flex items-center justify-center min-h-screen pt-20 pb-10 px-4 sm:px-6 md:px-8">
+      <div className="w-full max-w-sm bg-white/40 backdrop-blur-md p-6 md:p-8 rounded-[2rem] shadow-xl text-center border border-white/50">
 
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
           Selamat Datang di Maldev Wedding!

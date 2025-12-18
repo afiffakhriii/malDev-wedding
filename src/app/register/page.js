@@ -35,15 +35,15 @@ export default function RegisterForm() {
     return "very good";
   };
 
-    const handlePhoneNumberChange = (e) => {
+  const handlePhoneNumberChange = (e) => {
     const numericValue = e.target.value.replace(/[^0-9]/g, '');
     setPhoneNumber(numericValue);
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white p-4 sm:p-6 md:p-8">
-      <div className="w-full max-w-sm bg-white p-6 md:p-8 rounded-2xl shadow-lg text-center">
-        
+    <div className="flex items-center justify-center min-h-screen pt-20 pb-10 px-4 sm:px-6 md:px-8">
+      <div className="w-full max-w-sm bg-white/40 backdrop-blur-md p-6 md:p-8 rounded-[2rem] shadow-xl text-center border border-white/50">
+
         <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
           Daftar Sekarang!
         </h1>
@@ -99,7 +99,7 @@ export default function RegisterForm() {
               {showPassword ? <FaEyeSlash className="h-5 w-5" /> : <FaEye className="h-5 w-5" />}
             </button>
           </div>
-          
+
           {/* Password Strength */}
           <div className="mt-2 flex items-center justify-between">
             <div
@@ -117,7 +117,7 @@ export default function RegisterForm() {
               {getStrengthText(getPasswordStrength())}
             </span>
           </div>
-          
+
           <div className="text-sm text-gray-500 space-y-1 mt-2">
             <h3 className="font-semibold text-gray-700">Password Strength</h3>
             <div className="flex items-center">
